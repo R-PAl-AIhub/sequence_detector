@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Detector Visualizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Sequence Detector <span class="highlight">Visualizer</span></h1>
+            <p>Visualize Mealy and Moore State Machines for any sequence.</p>
+        </header>
+
+        <main>
+            <div class="top-section">
+                <div class="controls-panel glass">
+                    <div class="controls-grid">
+                        <div class="control-group">
+                            <label class="group-label">Machine Type</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="machineType" value="mealy" checked>
+                                    <span class="custom-radio"></span>
+                                    Mealy
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="machineType" value="moore">
+                                    <span class="custom-radio"></span>
+                                    Moore
+                                </label>
+                            </div>
+                            <small class="hint">Choose the state machine type.</small>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="group-label">Overlap Mode</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="overlapMode" value="overlapping" checked>
+                                    <span class="custom-radio"></span>
+                                    Overlapping
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="overlapMode" value="non-overlapping">
+                                    <span class="custom-radio"></span>
+                                    Non-Overlapping
+                                </label>
+                            </div>
+                            <small class="hint" id="overlapHint">Allow overlapping detections.</small>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="sequenceInput" class="group-label">Pattern to Detect</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="sequenceInput" placeholder="e.g., 101" pattern="[01]+"
+                                    autocomplete="off">
+                            </div>
+                            <small class="hint">Enter the binary pattern you want to detect.</small>
+                        </div>
+
+                        <div class="control-group">
+                            <button id="visualizeBtn" class="btn-primary">
+                                Generate State Machine
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualization-container glass">
+                <div id="canvas-wrapper">
+                    <svg id="graphSvg" width="100%" height="100%"></svg>
+                    <div id="placeholder-text">Enter a pattern and click Generate to see the state machine.</div>
+                </div>
+            </div>
+
+            <div class="test-section glass">
+                <h3>Test Input Sequence - Interactive Step-by-Step</h3>
+                <div class="test-controls">
+                    <div class="input-wrapper">
+                        <input type="text" id="testInput" placeholder="e.g., 110101" pattern="[01]*" autocomplete="off">
+                        <small class="hint">Enter a binary sequence to test against the detector.</small>
+                    </div>
+                    <button id="testBtn" class="btn-secondary">
+                        Run Test
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="step-navigation" id="stepNavigation">
+                    <button id="prevStepBtn" class="step-btn">
+                        ← Previous
+                    </button>
+                    <div class="step-info">
+                        <span id="stepInfo">Step 0 / 0</span>
+                    </div>
+                    <button id="nextStepBtn" class="step-btn">
+                        Next →
+                    </button>
+                    <button id="resetBtn" class="step-btn">
+                        Reset
+                    </button>
+                </div>
+
+                <div id="testResult" class="test-result"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
