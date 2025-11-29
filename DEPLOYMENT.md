@@ -109,7 +109,7 @@
 
 ---
 
-## 📁 File Structure (Current)
+## File Structure (Current)
 
 ```
 sequence_detector/
@@ -123,7 +123,7 @@ All files are in the root directory, which is perfect for static hosting!
 
 ---
 
-## ✅ Pre-Deployment Checklist
+## Pre-Deployment Checklist
 
 - [x] All files are in the same directory
 - [x] No external dependencies (everything is self-contained)
@@ -133,7 +133,7 @@ All files are in the root directory, which is perfect for static hosting!
 
 ---
 
-## 🎯 Recommended Choice
+## Recommended Choice
 
 **For beginners**: Use **Netlify Drop** (Option 2) - just drag and drop!
 
@@ -158,7 +158,7 @@ All files are in the root directory, which is perfect for static hosting!
 
 ---
 
-## 📝 Next Steps After Deployment
+## Next Steps After Deployment
 
 1. **Test on mobile devices**
 2. **Share the URL** with friends/colleagues
@@ -170,7 +170,7 @@ All files are in the root directory, which is perfect for static hosting!
 
 ---
 
-## 🌐 Custom Domain (Optional)
+## Custom Domain (Optional)
 
 All platforms above support custom domains:
 

@@ -1,24 +1,24 @@
-# 🔄 Sequence Detector Visualizer
+# Sequence Detector Visualizer
 
 An interactive web application for visualizing Mealy and Moore state machines for binary sequence detection.
 
 ![Sequence Detector](https://img.shields.io/badge/Status-Live-success)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
-## ✨ Features
+## Features
 
-- 🎨 **Beautiful UI** - Premium dark theme with glassmorphism effects
-- 🔄 **Dual Machine Types** - Support for both Mealy and Moore state machines
-- 🎯 **Overlap Detection** - Toggle between overlapping and non-overlapping modes
-- 📊 **Interactive Visualization** - Step-by-step state transitions with animations
-- 🎭 **Real-time Testing** - Test any binary sequence against your detector
-- 📱 **Responsive Design** - Works on desktop, tablet, and mobile
+- **Beautiful UI** - Premium dark theme with glassmorphism effects
+- **Dual Machine Types** - Support for both Mealy and Moore state machines
+- **Overlap Detection** - Toggle between overlapping and non-overlapping modes
+- **Interactive Visualization** - Step-by-step state transitions with animations
+- **Real-time Testing** - Test any binary sequence against your detector
+- **Responsive Design** - Works on desktop, tablet, and mobile
 
-## 🚀 Live Demo
+## Live Demo
 
 [View Live Demo](#) *(Link will be added after deployment)*
 
-## 🎮 How to Use
+## How to Use
 
 1. **Choose Machine Type**: Select Mealy or Moore
 2. **Set Overlap Mode**: Choose overlapping or non-overlapping detection
@@ -27,7 +27,7 @@ An interactive web application for visualizing Mealy and Moore state machines fo
 5. **Test**: Enter a test sequence and click "Run Test"
 6. **Navigate**: Use Next/Previous buttons or click on steps to see transitions
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5** - Structure
 - **CSS3** - Styling with modern features (Grid, Flexbox, Animations)
@@ -35,7 +35,7 @@ An interactive web application for visualizing Mealy and Moore state machines fo
 - **SVG** - State diagram rendering
 - **Google Fonts** - Typography (Outfit)
 
-## 📦 Installation
+## Installation
 
 No installation required! Just open `index.html` in a modern web browser.
 
@@ -54,7 +54,7 @@ open index.html   # macOS
 xdg-open index.html  # Linux
 ```
 
-## 🎯 Examples
+## Examples
 
 ### Example 1: Detect "101"
 - **Pattern**: `101`
@@ -66,7 +66,7 @@ xdg-open index.html  # Linux
 - **Test Input**: `1001001`
 - **Result**: Found at positions 1, 4 (overlapping mode)
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 sequence-detector-visualizer/
@@ -77,7 +77,7 @@ sequence-detector-visualizer/
 └── README.md           # This file
 ```
 
-## 🎨 Features in Detail
+## Features in Detail
 
 ### State Machine Generation
 - Automatically generates states based on pattern length
@@ -96,7 +96,7 @@ sequence-detector-visualizer/
 - Detection markers for pattern matches
 - Navigation controls (Next, Previous, Reset)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 
@@ -106,21 +106,21 @@ Contributions are welcome! Feel free to:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👨‍💻 Author
+##  Author
 
 **Ratul**
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Inspired by digital logic design and automata theory
 - Built with modern web technologies
 - Designed for educational purposes
 
-## 📧 Contact
+## Contact
 
 For questions or feedback, please open an issue on GitHub.
 
