@@ -2,9 +2,6 @@
 
 An interactive web application for visualizing Mealy and Moore state machines for binary sequence detection.
 
-![Sequence Detector](https://img.shields.io/badge/Status-Live-success)
-![License](https://img.shields.io/badge/License-MIT-blue)
-
 ## Features
 
 - **Beautiful UI** - Premium dark theme with glassmorphism effects
@@ -13,10 +10,6 @@ An interactive web application for visualizing Mealy and Moore state machines fo
 - **Interactive Visualization** - Step-by-step state transitions with animations
 - **Real-time Testing** - Test any binary sequence against your detector
 - **Responsive Design** - Works on desktop, tablet, and mobile
-
-## Live Demo
-
-[View Live Demo](#) *(Link will be added after deployment)*
 
 ## How to Use
 
